@@ -45,8 +45,8 @@ export const projects: Project[] = [
     id: "game-manager",
     name: "Game Manager",
     description:
-      "Tracks the status and progress of every project on this site. Built to be uploaded — content coming soon.",
-    status: "coming-soon",
+      "Tracks the status and progress of every project on this site. Filter, search, and inspect milestones, dependencies, and run.game deployment state.",
+    status: "live",
     href: "/game-manager",
     isExternal: false,
     tags: ["tool", "dashboard"],
