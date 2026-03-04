@@ -27,7 +27,6 @@ const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
 
 // Key packages to always highlight
 const KEY_PACKAGES = [
-  '@series-inc/venus-sdk', '@series-inc/rundot-game-sdk',
   'phaser', 'three', 'vite', 'react', 'typescript',
 ];
 
@@ -497,12 +496,9 @@ function renderModal(p) {
         <span class="${p.hasGDD ? 'flag-yes' : 'flag-no'}">${p.hasGDD ? '&#10003;' : '&#10007;'} Game Design Document</span>
         <span class="${p.hasMilestones ? 'flag-yes' : 'flag-no'}">${p.hasMilestones ? '&#10003;' : '&#10007;'} Milestone Plan</span>
         <span class="${p.hasProductionStatus ? 'flag-yes' : 'flag-no'}">${p.hasProductionStatus ? '&#10003;' : '&#10007;'} Production Status</span>
-        <span class="${p.runGameDeployed ? 'flag-yes' : 'flag-no'}">${p.runGameDeployed ? '&#10003;' : '&#10007;'} Live on run.game</span>
         <span class="${p.gitActive ? 'flag-yes' : 'flag-no'}">${p.gitActive ? '&#10003;' : '&#10007;'} Git Active</span>
       </div>
     </div>
-
-    ${renderRunGameSection(p)}
 
     ${p.notes ? `
     <div class="modal-section">
@@ -516,96 +512,6 @@ function renderModal(p) {
     <div class="modal-section" style="margin-bottom:0;">
       <h3>Location</h3>
       <p style="font-family: var(--font-mono); font-size: 0.8rem;">${p.path}</p>
-    </div>
-  `;
-}
-
-function renderRunGameSection(p) {
-  const rg = p.runGame;
-  if (!rg) return '';
-
-  const statusColors = {
-    'deployed': 'green',
-    'ready': 'cyan',
-    'needs-config': 'yellow',
-    'not-started': 'orange',
-    'not-applicable': 'gray',
-  };
-  const statusLabels = {
-    'deployed': 'Live on run.game',
-    'ready': 'Ready to Publish',
-    'needs-config': 'Almost Ready',
-    'not-started': 'Not Started',
-    'not-applicable': 'Not Applicable',
-  };
-
-  const color = statusColors[rg.status] || 'gray';
-  const label = statusLabels[rg.status] || rg.status;
-
-  let sdkHtml = '';
-  if (rg.sdk) {
-    const sdkName = rg.sdk === '@series-inc/rundot-game-sdk'
-      ? 'Rundot Game SDK (newest)'
-      : rg.sdk === '@series-inc/venus-sdk'
-        ? 'Venus SDK (run.game connector)'
-        : rg.sdk;
-    const versionNote = rg.sdkVersion === '*'
-      ? '<span class="rg-version-warn">any version (wildcard)</span>'
-      : `v${rg.sdkVersion}`;
-    sdkHtml = `
-      <div class="rg-detail">
-        <span class="rg-detail-label">Connector Software:</span>
-        <span>${sdkName} &mdash; ${versionNote}</span>
-      </div>
-    `;
-  }
-
-  let gameIdHtml = '';
-  if (rg.gameId) {
-    gameIdHtml = `
-      <div class="rg-detail">
-        <span class="rg-detail-label">Game ID:</span>
-        <span class="rg-game-id">${rg.gameId}</span>
-      </div>
-    `;
-  }
-
-  let featuresHtml = '';
-  if (rg.featuresUsed && rg.featuresUsed.length > 0) {
-    featuresHtml = `
-      <div class="rg-features">
-        <div class="rg-feature-label">Features being used:</div>
-        <ul class="rg-feature-list rg-feature-yes">
-          ${rg.featuresUsed.map(f => `<li>&#10003; ${f}</li>`).join('')}
-        </ul>
-      </div>
-    `;
-  }
-
-  let missingHtml = '';
-  if (rg.featuresMissing && rg.featuresMissing.length > 0) {
-    missingHtml = `
-      <div class="rg-features">
-        <div class="rg-feature-label">Not set up yet:</div>
-        <ul class="rg-feature-list rg-feature-no">
-          ${rg.featuresMissing.map(f => `<li>&#10007; ${f}</li>`).join('')}
-        </ul>
-      </div>
-    `;
-  }
-
-  return `
-    <div class="modal-section rg-section">
-      <h3>run.game Status</h3>
-      <div class="rg-status-row">
-        <span class="rg-badge rg-badge-${color}">${label}</span>
-        ${rg.readiness ? `<span class="rg-readiness">${rg.readiness}</span>` : ''}
-      </div>
-      ${rg.summary ? `<p class="rg-summary">${rg.summary}</p>` : ''}
-      ${sdkHtml}
-      ${gameIdHtml}
-      ${featuresHtml}
-      ${missingHtml}
     </div>
   `;
 }
@@ -642,10 +548,6 @@ function generateMilestoneProgressPrompt(p) {
     prompt += `## Notes from Project Review\n${p.notes}\n\n`;
   }
 
-  if (p.runGame && p.runGame.summary && p.runGame.status !== 'not-applicable') {
-    prompt += `## run.game Platform Status\n${p.runGame.summary}\n\n`;
-  }
-
   prompt += `## What I Need\n`;
   prompt += `Look at the current milestone progress above and help me create an efficient plan to move this project forward. Focus on what's most impactful — what should I work on next, and in what order?\n\n`;
   prompt += `**Before making a plan, please ASK ME QUESTIONS about:**\n`;
@@ -677,13 +579,8 @@ function generateCreateMilestonePrompt(p) {
   if (p.hasGDD) flags.push('Has a Game Design Document');
   if (p.hasProductionStatus) flags.push('Has a Production Status doc');
   if (p.gitActive) flags.push('Git is active');
-  if (p.runGameDeployed) flags.push('Deployed on run.game');
   if (flags.length > 0) {
     prompt += `## What's Already Set Up\n${flags.map(f => '- ' + f).join('\n')}\n\n`;
-  }
-
-  if (p.runGame && p.runGame.summary && p.runGame.status !== 'not-applicable') {
-    prompt += `## run.game Platform Status\n${p.runGame.summary}\n\n`;
   }
 
   prompt += `## What I Need\n`;
