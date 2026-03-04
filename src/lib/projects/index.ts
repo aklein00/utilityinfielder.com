@@ -41,16 +41,16 @@ export const projects: Project[] = [
     isExternal: false,
     tags: ["tool", "AI", "agents", "Cursor"],
   },
-  {
-    id: "game-manager",
-    name: "Game Manager",
-    description:
-      "Tracks the status and progress of every project on this site. Filter, search, and inspect milestones, dependencies, and build status.",
-    status: "live",
-    href: "/game-manager",
-    isExternal: false,
-    tags: ["tool", "dashboard"],
-  },
+  // {
+  //   id: "game-manager",
+  //   name: "Game Manager",
+  //   description:
+  //     "Tracks the status and progress of every project on this site. Filter, search, and inspect milestones, dependencies, and build status.",
+  //   status: "live",
+  //   href: "/game-manager",
+  //   isExternal: false,
+  //   tags: ["tool", "dashboard"],
+  // },
   {
     id: "hello-whirled",
     name: "Hello Whirled",
