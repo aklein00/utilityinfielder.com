@@ -15,6 +15,8 @@ export interface Project {
   /** true = opens in new tab (external subdomain), false = internal Next.js route */
   isExternal: boolean;
   tags: string[];
+  /** Path to thumbnail image in /public, e.g. "/assets/images/projects/foo.png". null = show placeholder */
+  image?: string | null;
 }
 
 /**
@@ -35,11 +37,12 @@ export const projects: Project[] = [
     id: "jobbybobby",
     name: "JobbyBobby",
     description:
-      "A multi-agent AI job search system built for a 6-week runway. Bobby, Lois, and the Architect work together inside Cursor.",
+      "A custom multi-agent AI job search system. JobbyBobby, Lois, and the Architect work together inside Cursor to organize the job search, scout for leads, advise on strategy, and build the application materials.",
     status: "live",
     href: "/jobbybobby",
     isExternal: false,
     tags: ["tool", "AI", "agents", "Cursor"],
+    image: "/assets/images/projects/jobbybobby.png",
   },
   // {
   //   id: "game-manager",
@@ -55,11 +58,12 @@ export const projects: Project[] = [
     id: "hello-whirled",
     name: "Hello Whirled",
     description:
-      "Interactive 3D planet game with basketball physics. Built with React, Vite, and TypeScript.",
+      "A simple interactive 3D Planet Toy. Built with React, Vite, and TypeScript.",
     status: "coming-soon",
     href: null,
     isExternal: true,
     tags: ["3D", "game", "React", "TypeScript"],
+    image: "/assets/images/projects/hellowhirled.png",
   },
   {
     id: "ultraviolet",
@@ -70,6 +74,7 @@ export const projects: Project[] = [
     href: null,
     isExternal: true,
     tags: ["3D", "game", "Three.js"],
+    image: "/assets/images/projects/ultraviolet.png",
   },
   {
     id: "datelight",
@@ -80,24 +85,27 @@ export const projects: Project[] = [
     href: null,
     isExternal: true,
     tags: ["tool", "AI", "maps"],
+    image: "/assets/images/projects/datelight.png",
   },
   {
     id: "bizzydad",
     name: "BizzyDad",
-    description: "Life management game — balance work, family, and chaos.",
+    description: "A life management app — balance work, family, and chaos.",
     status: "wip",
     href: null,
     isExternal: true,
     tags: ["game", "art"],
+    image: "/assets/images/projects/bizzydad.png",
   },
   {
     id: "dirtbagz",
     name: "Dirtbagz",
-    description: "Card-collecting game with hand-drawn character art.",
+    description: "A retro-futuristic robot card-collecting baseball game. Build a team of junkyard robots and play NES-style baseball.",
     status: "wip",
     href: null,
     isExternal: true,
     tags: ["game", "art", "cards"],
+    image: "/assets/images/projects/dirtbagz.png",
   },
   {
     id: "gateaux",
@@ -107,15 +115,17 @@ export const projects: Project[] = [
     href: null,
     isExternal: true,
     tags: ["game", "art"],
+    image: "/assets/images/projects/gateaux.jpg",
   },
   {
     id: "roboruphio",
     name: "RoboRuphio",
-    description: "A robot character study. Fully rigged, fully vibed.",
+    description: "A robot punk built with AI generation and traditional 3D modeling. Rigged, animated, and tested in character video clips.",
     status: "wip",
     href: null,
     isExternal: true,
     tags: ["character", "3D", "art"],
+    image: "/assets/images/projects/roboruphio.jpg",
   },
   {
     id: "artartvibes",
@@ -126,5 +136,6 @@ export const projects: Project[] = [
     href: null,
     isExternal: true,
     tags: ["game", "series", "Three.js"],
+    image: "/assets/images/projects/artartvibes.png",
   },
 ];

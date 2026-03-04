@@ -5,8 +5,8 @@ export default function SiteHeader() {
       style={{ borderColor: "var(--border)", background: "var(--bg)" }}
     >
       <div
-        className="max-w-5xl mx-auto px-8 py-4 flex items-center justify-between"
-        style={{ padding: "12px 32px" }}
+        className="flex items-center justify-between"
+        style={{ maxWidth: "1000px", margin: "0 auto", padding: "12px 32px" }}
       >
         {/* Wordmark */}
         <a

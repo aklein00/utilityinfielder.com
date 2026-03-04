@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Badge from "@/components/ui/Badge";
 import type { Project } from "@/lib/projects";
@@ -41,17 +42,27 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           borderColor: "var(--border)",
         }}
       >
-        {/* Image placeholder area */}
+        {/* Thumbnail */}
         <div
-          className="w-full h-40 rounded-t-sm flex items-center justify-center"
+          className="w-full h-40 rounded-t-sm overflow-hidden relative flex items-center justify-center"
           style={{ background: "var(--surface-2)" }}
         >
-          <span
-            className="text-[11px] font-semibold uppercase tracking-widest"
-            style={{ color: "var(--text-muted)", opacity: 0.4 }}
-          >
-            {project.name}
-          </span>
+          {project.image ? (
+            <Image
+              src={project.image}
+              alt={project.name}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          ) : (
+            <span
+              className="text-[11px] font-semibold uppercase tracking-widest"
+              style={{ color: "var(--text-muted)", opacity: 0.4 }}
+            >
+              {project.name}
+            </span>
+          )}
         </div>
 
         {/* Card body */}

@@ -8,8 +8,8 @@ export default function SiteFooter() {
       }}
     >
       <div
-        className="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-4"
-        style={{ padding: "28px 32px" }}
+        className="flex flex-wrap items-center justify-between gap-4"
+        style={{ maxWidth: "1000px", margin: "0 auto", padding: "28px 32px" }}
       >
         <span
           className="text-[12px] font-semibold uppercase tracking-[0.1em]"
