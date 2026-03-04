@@ -121,8 +121,7 @@ export default function JobbyBobbyPage() {
             className="text-[14px] leading-relaxed"
             style={{ color: "var(--text-muted)", maxWidth: "580px", opacity: 0.7 }}
           >
-            6-week runway. 1 application submitted at launch. Four agents
-            working in parallel to organize, scout, advise, and build.
+            Four agents working in parallel to organize, scout, advise, and build.
           </p>
         </section>
 
