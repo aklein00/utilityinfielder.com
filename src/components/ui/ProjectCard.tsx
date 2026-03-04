@@ -36,10 +36,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <CardWrapper>
       <div
-        className="h-full rounded-sm border transition-colors duration-150"
+        className="h-full rounded-sm border transition-shadow duration-200 group-hover:shadow-[0_0_0_1px_rgba(224,123,57,0.45)]"
         style={{
           background: "var(--surface)",
-          borderColor: "var(--border)",
+          borderColor: isClickable ? "rgba(224,123,57,0.3)" : "var(--border)",
         }}
       >
         {/* Thumbnail */}
@@ -75,7 +75,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               }}
             >
               {isClickable ? (
-                <span className="group-hover:underline">{project.name}</span>
+                <span>{project.name}</span>
               ) : (
                 project.name
               )}
