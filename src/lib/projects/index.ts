@@ -34,6 +34,17 @@ export interface Project {
  */
 export const projects: Project[] = [
   {
+    id: "datelight",
+    name: "DateLight",
+    description:
+      "Decide on a date location in under 60 seconds. AI-curated venue picks based on vibe and radius.",
+    status: "live",
+    href: "https://datlight.utilityinfielder.com",
+    isExternal: true,
+    tags: ["tool", "AI", "maps"],
+    image: "/assets/images/projects/datelight.png",
+  },
+  {
     id: "jobbybobby",
     name: "JobbyBobby",
     description:
@@ -75,17 +86,6 @@ export const projects: Project[] = [
     isExternal: true,
     tags: ["3D", "game", "Three.js"],
     image: "/assets/images/projects/ultraviolet.png",
-  },
-  {
-    id: "datelight",
-    name: "DateLight",
-    description:
-      "Decide on a date location in under 60 seconds. AI-curated venue picks based on vibe and radius.",
-    status: "wip",
-    href: null,
-    isExternal: true,
-    tags: ["tool", "AI", "maps"],
-    image: "/assets/images/projects/datelight.png",
   },
   {
     id: "bizzydad",
