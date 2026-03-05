@@ -20,14 +20,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           href={project.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group block"
+          className="group block no-underline hover:no-underline"
         >
           {children}
         </a>
       );
     }
     return (
-      <Link href={project.href} className="group block">
+      <Link href={project.href} className="group block no-underline hover:no-underline">
         {children}
       </Link>
     );
@@ -66,8 +66,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Card body */}
-        <div className="p-4">
-          <div className="flex items-start justify-between gap-2 mb-2">
+        <div className="p-5">
+          <div className="flex items-start justify-between gap-2 mb-3">
             <h3
               className="text-[15px] font-semibold leading-snug transition-colors duration-150"
               style={{
@@ -84,7 +84,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           <p
-            className="text-[13px] leading-relaxed mb-3"
+            className="text-[13px] leading-relaxed mb-4"
             style={{ color: "var(--text-muted)" }}
           >
             {project.description}

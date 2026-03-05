@@ -17,7 +17,7 @@ export default function Home() {
       <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "40px 32px 80px" }}>
 
         {/* Hero */}
-        <section style={{ padding: "56px 0 48px", borderBottom: "1px solid var(--border)", marginBottom: "48px" }}>
+        <section style={{ padding: "24px 0 40px", borderBottom: "1px solid var(--border)", marginBottom: "48px" }}>
           <p
             className="text-[14px] leading-relaxed"
             style={{ color: "var(--text-muted)", maxWidth: "520px", marginBottom: "24px" }}
