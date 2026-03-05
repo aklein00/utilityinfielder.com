@@ -39,7 +39,7 @@ export const projects: Project[] = [
     description:
       "Decide on a date location in under 60 seconds. AI-curated venue picks based on vibe and radius.",
     status: "live",
-    href: "https://datlight.utilityinfielder.com",
+    href: "https://datelight.utilityinfielder.com",
     isExternal: true,
     tags: ["tool", "AI", "maps"],
     image: "/assets/images/projects/datelight.png",
