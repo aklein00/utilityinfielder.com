@@ -66,8 +66,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Card body */}
-        <div className="p-5">
-          <div className="flex items-start justify-between gap-2 mb-3">
+        <div className="px-5 pt-3 pb-4">
+          <div className="flex items-start justify-between gap-2 mb-4">
             <h3
               className="text-[15px] font-semibold leading-snug transition-colors duration-150"
               style={{
@@ -84,7 +84,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           <p
-            className="text-[13px] leading-relaxed mb-4"
+            className="text-[13px] leading-relaxed mb-5"
             style={{ color: "var(--text-muted)" }}
           >
             {project.description}

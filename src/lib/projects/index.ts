@@ -34,6 +34,17 @@ export interface Project {
  */
 export const projects: Project[] = [
   {
+    id: "hello-whirled",
+    name: "Hello Whirled",
+    description:
+      "A simple interactive 3D Planet Toy. Built with React, Vite, and TypeScript.",
+    status: "live",
+    href: "https://hellowhirled.utilityinfielder.com",
+    isExternal: true,
+    tags: ["3D", "game", "React", "TypeScript"],
+    image: "/assets/images/projects/hellowhirled.png",
+  },
+  {
     id: "datelight",
     name: "DateLight",
     description:
@@ -65,17 +76,6 @@ export const projects: Project[] = [
   //   isExternal: false,
   //   tags: ["tool", "dashboard"],
   // },
-  {
-    id: "hello-whirled",
-    name: "Hello Whirled",
-    description:
-      "A simple interactive 3D Planet Toy. Built with React, Vite, and TypeScript.",
-    status: "coming-soon",
-    href: null,
-    isExternal: true,
-    tags: ["3D", "game", "React", "TypeScript"],
-    image: "/assets/images/projects/hellowhirled.png",
-  },
   {
     id: "ultraviolet",
     name: "Ultraviolet",
