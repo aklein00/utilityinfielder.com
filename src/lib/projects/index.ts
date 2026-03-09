@@ -138,4 +138,15 @@ export const projects: Project[] = [
     tags: ["game", "series", "Three.js"],
     image: "/assets/images/projects/artartvibes.png",
   },
+  {
+    id: "sportsballfantasy",
+    name: "Sportsball Fantasy",
+    description:
+      "Punk-magic fantasy sports dashboard for managing leagues and dominating the competition.",
+    status: "coming-soon",
+    href: "https://sportsballfantasy.utilityinfielder.com",
+    isExternal: true,
+    tags: ["sports", "fantasy", "dashboard"],
+    image: "/assets/images/projects/sportsballfantasy.png",
+  },
 ];
