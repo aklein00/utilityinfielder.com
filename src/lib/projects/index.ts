@@ -81,8 +81,8 @@ export const projects: Project[] = [
     name: "Ultraviolet",
     description:
       "Endless runner where a purple blob spreads color through a grey city. Three.js.",
-    status: "coming-soon",
-    href: null,
+    status: "live",
+    href: "https://ultraviolette.utilityinfielder.com/",
     isExternal: true,
     tags: ["3D", "game", "Three.js"],
     image: "/assets/images/projects/ultraviolet.png",
