@@ -87,6 +87,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   Beta
                 </span>
               )}
+              {project.isAlpha && (
+                <span className="inline-block px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest rounded-sm bg-amber-950 text-amber-400 border border-amber-800">
+                  Alpha
+                </span>
+              )}
             </div>
           </div>
 

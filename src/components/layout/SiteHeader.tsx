@@ -19,16 +19,6 @@ export default function SiteHeader() {
           >
             Utility Infielder
           </span>
-          <span
-            className="text-[11px] font-semibold uppercase tracking-[0.08em] px-1.5 py-0.5 rounded-sm"
-            style={{
-              color: "var(--accent)",
-              background: "var(--surface)",
-              border: "1px solid var(--border)",
-            }}
-          >
-            Beta
-          </span>
         </a>
 
         {/* Nav */}

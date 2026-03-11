@@ -19,6 +19,8 @@ export interface Project {
   image?: string | null;
   /** true = show a "Beta" badge alongside the Live badge (live but unfinished) */
   isBeta?: boolean;
+  /** true = show an "Alpha" badge alongside the Coming Soon badge (early/in-progress preview) */
+  isAlpha?: boolean;
 }
 
 /**
@@ -116,7 +118,7 @@ export const projects: Project[] = [
     description: "Bakery management game. Build, bake, and grow your empire.",
     status: "coming-soon",
     href: null,
-    isBeta: true,
+    isAlpha: true,
     isExternal: true,
     tags: ["game", "art"],
     image: "/assets/images/projects/gateaux.jpg",
@@ -149,7 +151,7 @@ export const projects: Project[] = [
       "Punk-magic fantasy sports dashboard for managing leagues and dominating the competition.",
     status: "coming-soon",
     href: "https://sportsballfantasy.utilityinfielder.com",
-    isBeta: true,
+    isAlpha: true,
     isExternal: true,
     tags: ["sports", "fantasy", "dashboard"],
     image: "/assets/images/projects/sportsballfantasy.png",
