@@ -115,7 +115,7 @@ export const projects: Project[] = [
   {
     id: "gateaux",
     name: "Gateaux",
-    description: "Bakery management game. Build, bake, and grow your empire.",
+    description: "Cats, Coffee, and Cake. Learn simple phrases in French and Spanish.",
     status: "coming-soon",
     href: null,
     isAlpha: true,
