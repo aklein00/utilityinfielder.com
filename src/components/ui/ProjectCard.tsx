@@ -80,7 +80,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 project.name
               )}
             </h3>
-            <Badge status={project.status} className="shrink-0 mt-0.5" />
+            <div className="flex items-center gap-1 shrink-0 mt-0.5">
+              <Badge status={project.status} />
+              {project.isBeta && (
+                <span className="inline-block px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest rounded-sm bg-amber-950 text-amber-400 border border-amber-800">
+                  Beta
+                </span>
+              )}
+            </div>
           </div>
 
           <p

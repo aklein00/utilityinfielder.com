@@ -17,6 +17,8 @@ export interface Project {
   tags: string[];
   /** Path to thumbnail image in /public, e.g. "/assets/images/projects/foo.png". null = show placeholder */
   image?: string | null;
+  /** true = show a "Beta" badge alongside the Live badge (live but unfinished) */
+  isBeta?: boolean;
 }
 
 /**
@@ -84,6 +86,7 @@ export const projects: Project[] = [
     status: "live",
     href: "https://ultraviolette.utilityinfielder.com/",
     isExternal: true,
+    isBeta: true,
     tags: ["3D", "game", "Three.js"],
     image: "/assets/images/projects/ultraviolet.png",
   },
