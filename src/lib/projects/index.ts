@@ -47,6 +47,18 @@ export const projects: Project[] = [
     image: "/assets/images/projects/hellowhirled.png",
   },
   {
+    id: "ultraviolet",
+    name: "Ultraviolet",
+    description:
+      "Endless runner where a purple blob spreads color through a grey city. Three.js.",
+    status: "live",
+    href: "https://ultraviolette.utilityinfielder.com/",
+    isExternal: true,
+    isBeta: true,
+    tags: ["3D", "game", "Three.js"],
+    image: "/assets/images/projects/ultraviolet.png",
+  },
+  {
     id: "datelight",
     name: "DateLight",
     description:
@@ -79,18 +91,6 @@ export const projects: Project[] = [
   //   tags: ["tool", "dashboard"],
   // },
   {
-    id: "ultraviolet",
-    name: "Ultraviolet",
-    description:
-      "Endless runner where a purple blob spreads color through a grey city. Three.js.",
-    status: "live",
-    href: "https://ultraviolette.utilityinfielder.com/",
-    isExternal: true,
-    isBeta: true,
-    tags: ["3D", "game", "Three.js"],
-    image: "/assets/images/projects/ultraviolet.png",
-  },
-  {
     id: "bizzydad",
     name: "BizzyDad",
     description: "A life management app — balance work, family, and chaos.",
@@ -114,8 +114,9 @@ export const projects: Project[] = [
     id: "gateaux",
     name: "Gateaux",
     description: "Bakery management game. Build, bake, and grow your empire.",
-    status: "wip",
+    status: "coming-soon",
     href: null,
+    isBeta: true,
     isExternal: true,
     tags: ["game", "art"],
     image: "/assets/images/projects/gateaux.jpg",
@@ -148,6 +149,7 @@ export const projects: Project[] = [
       "Punk-magic fantasy sports dashboard for managing leagues and dominating the competition.",
     status: "coming-soon",
     href: "https://sportsballfantasy.utilityinfielder.com",
+    isBeta: true,
     isExternal: true,
     tags: ["sports", "fantasy", "dashboard"],
     image: "/assets/images/projects/sportsballfantasy.png",
