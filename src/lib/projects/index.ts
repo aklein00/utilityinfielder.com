@@ -61,6 +61,18 @@ export const projects: Project[] = [
     image: "/assets/images/projects/ultraviolet.png",
   },
   {
+    id: "gateaux",
+    name: "Gateaux",
+    description:
+      "Cats, coffee, and cake. Run a magical bakery and learn simple phrases in French and Spanish.",
+    status: "live",
+    href: "/gateaux",
+    isExternal: false,
+    isBeta: true,
+    tags: ["game", "art", "language"],
+    image: "/assets/images/projects/gateaux.jpg",
+  },
+  {
     id: "datelight",
     name: "DateLight",
     description:
@@ -111,17 +123,6 @@ export const projects: Project[] = [
     isExternal: true,
     tags: ["game", "art", "cards"],
     image: "/assets/images/projects/dirtbagz.png",
-  },
-  {
-    id: "gateaux",
-    name: "Gateaux",
-    description: "Cats, Coffee, and Cake. Learn simple phrases in French and Spanish.",
-    status: "coming-soon",
-    href: null,
-    isAlpha: true,
-    isExternal: true,
-    tags: ["game", "art"],
-    image: "/assets/images/projects/gateaux.jpg",
   },
   {
     id: "roboruphio",

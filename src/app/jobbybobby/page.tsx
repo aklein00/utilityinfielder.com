@@ -14,14 +14,14 @@ const agents = [
     name: "Bobby",
     role: "Master Organizer",
     description:
-      "Runs a status check every 24 hours. Tracks applications, flags duplicates, monitors runway, and keeps the file system clean. The source of truth.",
+      "Runs a status check every 24 hours. Tracks applications, flags duplicates, and keeps the file system clean. The source of truth.",
     tags: ["check-ins", "tracking", "dedup"],
   },
   {
     name: "Lois",
     role: "Daily Job Scout",
     description:
-      "Scans job boards every 24 hours. Evaluates fit across three career lanes, filters by location and salary, and queues new leads for review.",
+      "Scans job boards every 24 hours. Evaluates fit across six active career lanes, filters by location and salary, and queues new leads for review.",
     tags: ["search", "leads", "screening"],
   },
   {
@@ -35,7 +35,7 @@ const agents = [
     name: "Advisors",
     role: "Strategic Counsel",
     description:
-      "Three advisors: Sammy (small studio / Lane A), Larry (big studio / Lanes B–C), Compass (career + life coach). All read the full dossier before advising.",
+      "Three advisors: Sammy (small studio / Lane A), Larry (big studio / Lane C and transition roles), Compass (career + life coach). All read the full dossier before advising.",
     tags: ["strategy", "advice", "perspective"],
   },
 ];
@@ -43,21 +43,39 @@ const agents = [
 const lanes = [
   {
     label: "Lane A",
-    name: "Art Prototyper / Creative Technologist",
-    pct: "40%",
-    note: "Small studios, R&D, AI-integrated workflows.",
-  },
-  {
-    label: "Lane B",
-    name: "Senior Artist w/ Pipeline Awareness",
-    pct: "30%",
-    note: "AI workflow, creative ops. Not traditional TA.",
+    name: "Creative Technology & Prototyping",
+    priority: "High",
+    note: "Hands-on AI production, visual R&D, and rapid prototyping.",
   },
   {
     label: "Lane C",
-    name: "Senior 3D Artist / Art Lead",
-    pct: "30%",
-    note: "Safety net. Mobile, platforms, stylized art.",
+    name: "Senior Art & Art Leadership",
+    priority: "Safety net",
+    note: "Senior craft and leadership with pipeline awareness, not traditional TA.",
+  },
+  {
+    label: "Lane D",
+    name: "AI Evaluation & Quality Operations",
+    priority: "High",
+    note: "AI training, multimodal evaluation, rubrics, and reviewer quality.",
+  },
+  {
+    label: "Lane E",
+    name: "Product / UX Design",
+    priority: "Transition",
+    note: "Visual-product craft, prototyping, UX process, and systems thinking.",
+  },
+  {
+    label: "Lane F",
+    name: "Teaching & Creative Education",
+    priority: "Supplemental",
+    note: "Instruction, workshops, portfolio review, and creative mentoring.",
+  },
+  {
+    label: "Lane G",
+    name: "Creative Operations & Program Delivery",
+    priority: "Primary",
+    note: "Resourcing, vendors, budgets, schedules, and cross-functional delivery.",
   },
 ];
 
@@ -241,13 +259,13 @@ export default function JobbyBobbyPage() {
             className="text-[11px] font-semibold uppercase tracking-[0.12em] mb-1"
             style={{ color: "var(--text-muted)" }}
           >
-            Three Career Lanes
+            Six Active Career Lanes
           </p>
           <p
             className="text-[12px] mb-6"
             style={{ color: "var(--text-muted)", opacity: 0.5 }}
           >
-            Applications are distributed across three parallel targets.
+            The transition sprint runs across six distinct, non-overlapping targets.
           </p>
 
           <div className="flex flex-col gap-3">
@@ -280,7 +298,7 @@ export default function JobbyBobbyPage() {
                       className="text-[12px] font-normal"
                       style={{ color: "var(--text-muted)" }}
                     >
-                      — {lane.pct}
+                      — {lane.priority}
                     </span>
                   </p>
                   <p
