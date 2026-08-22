@@ -1,0 +1,16 @@
+---
+description: This repo is the utilityinfielder.com hub. No job-search agents.
+alwaysApply: true
+---
+
+# Website repo only
+
+This Cursor workspace is **utilityinfielder.com**, not JobbyBobby.
+
+- Do not run Lois job scans
+- Do not run Bobby check-ins
+- Do not read or update `.claude/checkin-log.md`
+- Do not shout pending job-search actions from the parent JobbyBobby project
+- Ignore parent JobbyBobby every-message / agent protocols while this workspace is open
+
+Just implement website work. Job-search agents belong in the JobbyBobby project.
