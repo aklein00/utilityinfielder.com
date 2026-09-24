@@ -137,31 +137,29 @@ export default function DeckCarousel({
               {slide.image ? (
                 <Image
                   src={slide.image}
-                  alt={slide.imageAlt ?? ""}
+                  alt={active ? (slide.imageAlt ?? "") : ""}
                   fill
-                  priority={i === 0}
                   sizes="(max-width: 1000px) 100vw, 1000px"
                   className="deck-slide-image"
                 />
               ) : null}
-              <div className="deck-slide-overlay">
-                <p className="deck-slide-kicker">{slide.label}</p>
-                <h2>{slide.name}</h2>
-                {slide.href ? (
-                  <a
-                    className="deck-link"
-                    href={slide.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    tabIndex={active ? 0 : -1}
-                  >
-                    View deck
-                  </a>
-                ) : null}
-              </div>
             </article>
           );
         })}
+        <div className="deck-slide-overlay">
+          <p className="deck-slide-kicker">{slides[index].label}</p>
+          <h2>{slides[index].name}</h2>
+          {slides[index].href ? (
+            <a
+              className="deck-link"
+              href={slides[index].href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View deck
+            </a>
+          ) : null}
+        </div>
       </div>
 
       <button
