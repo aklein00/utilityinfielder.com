@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import DeckCarousel from "@/components/ui/DeckCarousel";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { projects } from "@/lib/projects";
 
@@ -13,6 +14,10 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
+
+      <div className="deck-carousel-wrap">
+        <DeckCarousel />
+      </div>
 
       <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "40px 32px 80px" }}>
 
