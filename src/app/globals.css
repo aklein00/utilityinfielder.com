@@ -60,18 +60,20 @@ img {
   color: var(--text);
 }
 
+.deck-carousel-wrap {
+  width: min(1920px, 100%);
+  margin: 0 auto;
+}
+
 .deck-carousel {
   position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
-  border-radius: 2px;
-  border: 1px solid var(--border);
   background: var(--surface);
 }
 
 .deck-carousel-track {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1920 / 720;
 }
 
 .deck-slide {
@@ -206,7 +208,6 @@ img {
 }
 
 @media (max-width: 600px) {
-  .deck-carousel-track { aspect-ratio: 4 / 3; }
   .deck-slide-overlay { padding: 48px 18px 40px; }
   .deck-slide-overlay h2 { margin-bottom: 10px; font-size: 24px; }
   .deck-carousel-arrow { width: 32px; height: 32px; font-size: 22px; }

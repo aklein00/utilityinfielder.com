@@ -19,24 +19,30 @@ export interface DeckSlide {
 
 /**
  * Last Arcade and Techno Bowl deck links were not provided, so those slides
- * stay as placeholders with no outbound link.
+ * have covers but no outbound link.
  */
 export const deckSlides: DeckSlide[] = [
   {
     id: "last-arcade",
     name: "Last Arcade",
     label: "Pitch deck",
+    image: "/assets/images/carousel/last-arcade.jpg",
+    imageAlt:
+      "Last Arcade key art: pixel characters defending an arcade from a monster horde",
   },
   {
     id: "techno-bowl",
     name: "Techno Bowl",
     label: "Pitch deck",
+    image: "/assets/images/carousel/techno-bowl.jpg",
+    imageAlt:
+      "Techno Bowl key art: two armored players fist-bumping above a sunset arena",
   },
   {
     id: "project-ocean",
     name: "Project Ocean",
     label: "In development",
-    image: "/assets/images/carousel/project-ocean.webp",
+    image: "/assets/images/carousel/project-ocean.jpg",
     imageAlt:
       "A manta ray gliding through sunlit water beneath a sailboat on the horizon",
   },
@@ -139,7 +145,7 @@ export default function DeckCarousel({
                   src={slide.image}
                   alt={active ? (slide.imageAlt ?? "") : ""}
                   fill
-                  sizes="(max-width: 1000px) 100vw, 1000px"
+                  sizes="(max-width: 1920px) 100vw, 1920px"
                   className="deck-slide-image"
                 />
               ) : null}

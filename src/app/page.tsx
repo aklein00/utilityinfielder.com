@@ -15,9 +15,11 @@ export default function Home() {
     <>
       <SiteHeader />
 
-      <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "40px 32px 80px" }}>
-
+      <div className="deck-carousel-wrap">
         <DeckCarousel />
+      </div>
+
+      <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "40px 32px 80px" }}>
 
         {/* Hero */}
         <section style={{ padding: "24px 0 40px", borderBottom: "1px solid var(--border)", marginBottom: "48px" }}>
