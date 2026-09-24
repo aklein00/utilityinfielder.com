@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import DeckCarousel from "@/components/ui/DeckCarousel";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { projects } from "@/lib/projects";
 
@@ -15,6 +16,8 @@ export default function Home() {
       <SiteHeader />
 
       <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "40px 32px 80px" }}>
+
+        <DeckCarousel />
 
         {/* Hero */}
         <section style={{ padding: "24px 0 40px", borderBottom: "1px solid var(--border)", marginBottom: "48px" }}>
