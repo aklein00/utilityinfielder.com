@@ -182,9 +182,11 @@
   }
 
   .arrow {
+    top: 12px;
     width: 32px;
     height: 32px;
     font-size: 22px;
+    transform: none;
   }
 
   .previous {
