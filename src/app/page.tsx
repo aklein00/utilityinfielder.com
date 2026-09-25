@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import DeckCarousel from "@/components/carousel/DeckCarousel";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { projects } from "@/lib/projects";
 
@@ -14,6 +15,8 @@ export default function Home() {
     <>
       <SiteHeader />
 
+      <DeckCarousel />
+
       <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "40px 32px 80px" }}>
 
         {/* Hero */}
@@ -22,7 +25,7 @@ export default function Home() {
             className="text-[14px] leading-relaxed"
             style={{ color: "var(--text-muted)", maxWidth: "520px", marginBottom: "24px" }}
           >
-            Art Klein's personal lab — games, tools, and experiments built at the intersection of game development and AI.
+            Art Klein&apos;s personal lab — games, tools, and experiments built at the intersection of game development and AI.
             The full career and portfolio live at artkleinart.com.
           </p>
           <a
