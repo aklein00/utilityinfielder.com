@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function SiteHeader() {
   return (
     <header
@@ -5,11 +7,11 @@ export default function SiteHeader() {
       style={{ borderColor: "var(--border)", background: "var(--bg)" }}
     >
       <div
-        className="flex items-center justify-between"
+        className="flex flex-wrap items-center justify-between gap-2"
         style={{ maxWidth: "1000px", margin: "0 auto", padding: "12px 32px" }}
       >
         {/* Wordmark */}
-        <a
+        <Link
           href="/"
           className="flex items-center gap-2 no-underline hover:no-underline"
         >
@@ -19,10 +21,22 @@ export default function SiteHeader() {
           >
             Utility Infielder
           </span>
-        </a>
+        </Link>
 
         {/* Nav */}
-        <nav className="flex items-center gap-1">
+        <nav className="flex flex-wrap items-center justify-end gap-1">
+          <Link
+            href="/last-arcade"
+            className="nav-link text-[12px] font-semibold uppercase tracking-[0.04em] px-3 py-2 no-underline hover:no-underline"
+          >
+            Last Arcade
+          </Link>
+          <Link
+            href="/techno-bowl"
+            className="nav-link text-[12px] font-semibold uppercase tracking-[0.04em] px-3 py-2 no-underline hover:no-underline"
+          >
+            Techno Bowl
+          </Link>
           <a
             href="https://artkleinart.com"
             target="_blank"

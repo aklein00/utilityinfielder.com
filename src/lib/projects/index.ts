@@ -73,6 +73,30 @@ export const projects: Project[] = [
     image: "/assets/images/projects/gateaux.jpg",
   },
   {
+    id: "last-arcade",
+    name: "Last Arcade",
+    description:
+      "You’re the night crew at the last functioning arcade during a monster apocalypse.",
+    status: "live",
+    href: "/last-arcade",
+    isExternal: false,
+    isAlpha: true,
+    tags: ["game", "co-op", "concept"],
+    image: "/assets/images/projects/last-arcade.jpg",
+  },
+  {
+    id: "techno-bowl",
+    name: "Techno Bowl",
+    description:
+      "A 2–4 player friend-slop sports gauntlet. Run, throw, survive, and dance.",
+    status: "live",
+    href: "/techno-bowl",
+    isExternal: false,
+    isAlpha: true,
+    tags: ["game", "multiplayer", "concept"],
+    image: "/assets/images/projects/techno-bowl.jpg",
+  },
+  {
     id: "datelight",
     name: "DateLight",
     description:
