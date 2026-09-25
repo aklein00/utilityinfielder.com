@@ -77,7 +77,7 @@ export const projects: Project[] = [
     name: "Last Arcade",
     description:
       "You’re the night crew at the last functioning arcade during a monster apocalypse.",
-    status: "live",
+    status: "coming-soon",
     href: "/last-arcade",
     isExternal: false,
     isAlpha: true,
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     name: "Techno Bowl",
     description:
       "A 2–4 player friend-slop sports gauntlet. Run, throw, survive, and dance.",
-    status: "live",
+    status: "coming-soon",
     href: "/techno-bowl",
     isExternal: false,
     isAlpha: true,
@@ -174,7 +174,7 @@ export const projects: Project[] = [
     name: "Sportsball Fantasy",
     description:
       "Punk-magic fantasy sports dashboard for managing leagues and dominating the competition.",
-    status: "coming-soon",
+    status: "wip",
     href: "https://sportsballfantasy.utilityinfielder.com",
     isAlpha: true,
     isExternal: true,
