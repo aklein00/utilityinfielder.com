@@ -1,0 +1,15 @@
+---
+description: Keep the utilityinfielder.com header minimal and free of project links.
+globs: src/components/layout/SiteHeader.tsx
+alwaysApply: false
+---
+
+# Site Header Content
+
+The site header must contain only:
+
+- The Utility Infielder title linking to the homepage
+- The Portfolio link to `https://artkleinart.com`
+
+Do not add Last Arcade, Techno Bowl, or other project-specific navigation links
+to the header unless Art explicitly asks to change this rule.

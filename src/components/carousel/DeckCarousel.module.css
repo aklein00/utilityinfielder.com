@@ -159,6 +159,19 @@
 }
 
 @media (max-width: 600px) {
+  .track {
+    width: 100%;
+    aspect-ratio: auto;
+  }
+
+  .mobileCropCenter {
+    object-position: center center;
+  }
+
+  .mobileCropRight {
+    object-position: right center;
+  }
+
   .overlay {
     padding: 48px 18px 38px;
   }

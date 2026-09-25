@@ -107,6 +107,12 @@ export default function DeckCarousel({
         <div className={styles.track}>
           {slides.map((slide, slideIndex) => {
             const active = slideIndex === index;
+            const mobileCropClass =
+              slide.mobileCrop === "center"
+                ? styles.mobileCropCenter
+                : slide.mobileCrop === "right"
+                  ? styles.mobileCropRight
+                  : "";
             return (
               <article
                 key={slide.id}
@@ -121,7 +127,7 @@ export default function DeckCarousel({
                   fill
                   priority={slideIndex === 0}
                   sizes="(max-width: 1920px) 100vw, 1920px"
-                  className={styles.image}
+                  className={`${styles.image} ${mobileCropClass}`}
                 />
               </article>
             );

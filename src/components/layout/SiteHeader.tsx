@@ -23,20 +23,8 @@ export default function SiteHeader() {
           </span>
         </Link>
 
-        {/* Nav */}
+        {/* Portfolio link */}
         <nav className="flex flex-wrap items-center justify-end gap-1">
-          <Link
-            href="/last-arcade"
-            className="nav-link text-[12px] font-semibold uppercase tracking-[0.04em] px-3 py-2 no-underline hover:no-underline"
-          >
-            Last Arcade
-          </Link>
-          <Link
-            href="/techno-bowl"
-            className="nav-link text-[12px] font-semibold uppercase tracking-[0.04em] px-3 py-2 no-underline hover:no-underline"
-          >
-            Techno Bowl
-          </Link>
           <a
             href="https://artkleinart.com"
             target="_blank"

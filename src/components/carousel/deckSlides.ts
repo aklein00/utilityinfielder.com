@@ -5,6 +5,7 @@ export interface DeckSlide {
   image: string;
   imageAlt: string;
   href?: string;
+  mobileCrop?: "center" | "right";
 }
 
 export const deckSlides: DeckSlide[] = [
@@ -25,6 +26,7 @@ export const deckSlides: DeckSlide[] = [
     imageAlt:
       "Two Techno Bowl players meeting above a sunset sports arena",
     href: "/techno-bowl",
+    mobileCrop: "center",
   },
   {
     id: "project-ocean",
@@ -33,5 +35,6 @@ export const deckSlides: DeckSlide[] = [
     image: "/assets/images/carousel/project-ocean.jpg",
     imageAlt:
       "A manta ray gliding through sunlit water beneath a sailboat",
+    mobileCrop: "right",
   },
 ];
