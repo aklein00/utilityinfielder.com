@@ -38,6 +38,16 @@ export interface Project {
  */
 export const projects: Project[] = [
   {
+    id: "pick-your-friends",
+    name: "Pick Your Friends",
+    description: "Arcade action to pick your friends’ noses.",
+    status: "live",
+    href: "https://run.world/spookyscribbles/pick-your-friends",
+    isExternal: true,
+    tags: ["game", "arcade"],
+    image: "/assets/images/projects/pick-your-friends.jpg",
+  },
+  {
     id: "hello-whirled",
     name: "Hello Whirled",
     description:
@@ -106,17 +116,6 @@ export const projects: Project[] = [
     isExternal: true,
     tags: ["tool", "AI", "maps"],
     image: "/assets/images/projects/datelight.png",
-  },
-  {
-    id: "jobbybobby",
-    name: "JobbyBobby",
-    description:
-      "A custom multi-agent AI job search system. JobbyBobby, Lois, and the Architect work together inside Cursor to organize the job search, scout for leads, advise on strategy, and build the application materials.",
-    status: "live",
-    href: "/jobbybobby",
-    isExternal: false,
-    tags: ["tool", "AI", "agents", "Cursor"],
-    image: "/assets/images/projects/jobbybobby.png",
   },
   // {
   //   id: "game-manager",
