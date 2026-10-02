@@ -107,6 +107,17 @@ export const projects: Project[] = [
     image: "/assets/images/projects/techno-bowl.jpg",
   },
   {
+    id: "imagefarm",
+    name: "ImageFarm",
+    description:
+      "A private studio for repeatable generative art: style tracks, ComfyUI workflows, and layered PSD exports.",
+    status: "live",
+    href: "/imagefarm",
+    isExternal: false,
+    tags: ["tool", "AI", "art"],
+    image: "/assets/images/projects/imagefarm.jpg",
+  },
+  {
     id: "datelight",
     name: "DateLight",
     description:

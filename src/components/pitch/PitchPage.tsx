@@ -30,11 +30,18 @@ export interface PitchSection {
   layout?: "image-left" | "image-right" | "full";
 }
 
+export interface PitchCta {
+  label: string;
+  href: string;
+  note?: string;
+}
+
 export interface PitchPageContent {
   title: string;
   kicker: string;
   tagline: string;
   summary: string;
+  cta?: PitchCta;
   heroImage: PitchImage;
   accent: string;
   accentSecondary: string;
@@ -113,6 +120,21 @@ export default function PitchPage({ content }: { content: PitchPageContent }) {
             <h1 className={styles.title}>{content.title}</h1>
             <p className={styles.tagline}>{content.tagline}</p>
             <p className={styles.summary}>{content.summary}</p>
+            {content.cta && (
+              <div className={styles.cta}>
+                <a
+                  className={styles.ctaButton}
+                  href={content.cta.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {content.cta.label} ↗
+                </a>
+                {content.cta.note && (
+                  <p className={styles.ctaNote}>{content.cta.note}</p>
+                )}
+              </div>
+            )}
           </div>
           <div className={styles.heroArt}>
             <Image
