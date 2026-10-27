@@ -19,7 +19,7 @@ export interface Project {
   image?: string | null;
   /** true = show a "Beta" badge alongside the Live badge (live but unfinished) */
   isBeta?: boolean;
-  /** true = show an "Alpha" badge alongside the Coming Soon badge (early/in-progress preview) */
+  /** true = show an "Alpha" badge alongside the status badge (early preview) */
   isAlpha?: boolean;
 }
 
@@ -37,6 +37,53 @@ export interface Project {
  * When live, set the href and flip status to "live".
  */
 export const projects: Project[] = [
+  {
+    id: "project-ocean",
+    name: "Project Ocean",
+    description:
+      "A modular 3D character studio. Shape a character in Current, then build its wardrobe in River.",
+    status: "live",
+    href: "https://projectocean.utilityinfielder.com",
+    isExternal: true,
+    isAlpha: true,
+    tags: ["tool", "3D", "characters"],
+    image: "/assets/images/carousel/project-ocean-v6.webp",
+  },
+  {
+    id: "gateaux",
+    name: "Gateaux",
+    description:
+      "Cats, coffee, and cake. Run a magical bakery and learn simple phrases in French and Spanish.",
+    status: "live",
+    href: "/gateaux",
+    isExternal: false,
+    isBeta: true,
+    tags: ["game", "art", "language"],
+    image: "/assets/images/projects/gateaux.jpg",
+  },
+  {
+    id: "ultraviolet",
+    name: "Ultraviolet",
+    description:
+      "Endless runner where a purple blob spreads color and joy through a grey city. ",
+    status: "live",
+    href: "https://ultraviolette.utilityinfielder.com/",
+    isExternal: true,
+    isBeta: true,
+    tags: ["3D", "game", "Three.js"],
+    image: "/assets/images/projects/ultraviolet.png",
+  },
+  {
+    id: "imagefarm",
+    name: "ImageFarm",
+    description:
+      "A private studio for repeatable generative art: style tracks, ComfyUI workflows, and layered PSD exports.",
+    status: "live",
+    href: "/imagefarm",
+    isExternal: false,
+    tags: ["tool", "AI", "art"],
+    image: "/assets/images/projects/imagefarm.jpg",
+  },
   {
     id: "pick-your-friends",
     name: "Pick Your Friends",
@@ -57,30 +104,6 @@ export const projects: Project[] = [
     isExternal: true,
     tags: ["3D", "game", "React", "TypeScript"],
     image: "/assets/images/projects/hellowhirled.png",
-  },
-  {
-    id: "ultraviolet",
-    name: "Ultraviolet",
-    description:
-      "Endless runner where a purple blob spreads color and joy through a grey city. ",
-    status: "live",
-    href: "https://ultraviolette.utilityinfielder.com/",
-    isExternal: true,
-    isBeta: true,
-    tags: ["3D", "game", "Three.js"],
-    image: "/assets/images/projects/ultraviolet.png",
-  },
-  {
-    id: "gateaux",
-    name: "Gateaux",
-    description:
-      "Cats, coffee, and cake. Run a magical bakery and learn simple phrases in French and Spanish.",
-    status: "live",
-    href: "/gateaux",
-    isExternal: false,
-    isBeta: true,
-    tags: ["game", "art", "language"],
-    image: "/assets/images/projects/gateaux.jpg",
   },
   {
     id: "last-arcade",
@@ -105,28 +128,6 @@ export const projects: Project[] = [
     isAlpha: true,
     tags: ["game", "multiplayer", "concept"],
     image: "/assets/images/projects/techno-bowl.jpg",
-  },
-  {
-    id: "imagefarm",
-    name: "ImageFarm",
-    description:
-      "A private studio for repeatable generative art: style tracks, ComfyUI workflows, and layered PSD exports.",
-    status: "live",
-    href: "/imagefarm",
-    isExternal: false,
-    tags: ["tool", "AI", "art"],
-    image: "/assets/images/projects/imagefarm.jpg",
-  },
-  {
-    id: "project-ocean",
-    name: "Project Ocean",
-    description:
-      "A modular 3D character studio. Shape a character in Current, then build its wardrobe in River.",
-    status: "wip",
-    href: null,
-    isExternal: true,
-    tags: ["tool", "3D", "characters"],
-    image: "/assets/images/carousel/project-ocean-v6.webp",
   },
   {
     id: "datelight",

@@ -31,10 +31,11 @@ export const deckSlides: DeckSlide[] = [
   {
     id: "project-ocean",
     name: "Project Ocean",
-    label: "In development",
+    label: "Live Alpha",
     image: "/assets/images/carousel/project-ocean-v6.webp",
     imageAlt:
       "Six slender characters in distinct fashionable outfits beside a wireframe character study",
+    href: "https://projectocean.utilityinfielder.com",
     mobileCrop: "center",
   },
 ];
