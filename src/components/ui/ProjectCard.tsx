@@ -7,34 +7,39 @@ interface ProjectCardProps {
   project: Project;
 }
 
+function CardWrapper({
+  project,
+  children,
+}: ProjectCardProps & { children: React.ReactNode }) {
+  const isClickable = project.status === "live" && project.href !== null;
+
+  if (!isClickable || !project.href) {
+    return <div className="group block cursor-default">{children}</div>;
+  }
+  if (project.isExternal) {
+    return (
+      <a
+        href={project.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group block no-underline hover:no-underline"
+      >
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={project.href} className="group block no-underline hover:no-underline">
+      {children}
+    </Link>
+  );
+}
+
 export default function ProjectCard({ project }: ProjectCardProps) {
   const isClickable = project.status === "live" && project.href !== null;
 
-  const CardWrapper = ({ children }: { children: React.ReactNode }) => {
-    if (!isClickable || !project.href) {
-      return <div className="group block cursor-default">{children}</div>;
-    }
-    if (project.isExternal) {
-      return (
-        <a
-          href={project.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group block no-underline hover:no-underline"
-        >
-          {children}
-        </a>
-      );
-    }
-    return (
-      <Link href={project.href} className="group block no-underline hover:no-underline">
-        {children}
-      </Link>
-    );
-  };
-
   return (
-    <CardWrapper>
+    <CardWrapper project={project}>
       <div
         className="h-full rounded-sm border transition-shadow duration-200 group-hover:shadow-[0_0_0_1px_rgba(224,123,57,0.45)]"
         style={{

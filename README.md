@@ -230,6 +230,10 @@ Recommendation: **itch.io for games that are shareable, Vercel directly for prot
 
 ## Change Log
 
+### Project Ocean launch preparation — 26 October 2026
+
+Prepared the public Ocean launch configuration and a character-studio marketing image for the homepage carousel. Added a WIP project card; public links stay disabled until the custom domain is verified. See [the launch plan](docs/project-ocean/LAUNCH_PLAN.md) for the Vercel settings, Cloudflare DNS record, verification checklist, and link activation steps. This preparation does not publish either repository.
+
 | Date | Note |
 |------|------|
 | 2026-03-03 | Initialized as Next.js 15 (App Router) project. Hub architecture established. Coming Soon homepage with project card grid. DateLight added. |

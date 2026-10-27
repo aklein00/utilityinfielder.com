@@ -1,0 +1,40 @@
+# Project Ocean artwork v5
+
+Created with the built-in image generation tool on 26 October 2026.
+
+- Selected master: `output/imagegen/project-ocean-marketing-v5.png` — 2048 × 768.
+- Website asset: `public/assets/images/carousel/project-ocean-v5.webp` — 1920 × 720.
+- Input for the wardrobe revision: v3 artwork. Inputs for the final correction: v4 as edit target, v3 as proportion reference.
+- Six solid figures are connected; only the far-left transparent wireframe study remains schematic. All six have different tops and bottoms. Tall narrow proportions, head scale, placement and banner framing are retained visually.
+- Applied to the local hub carousel/project card and prepared Ocean welcome-page/social image. No publication performed.
+
+## Wardrobe and continuity edit prompt
+
+Edit this exact Project Ocean marketing image, preserving the 2048×768 ultra-wide composition, charcoal studio environment, existing lighting, camera, negative space at left, ground, pedestals, matte angular rendering, six solid figures' positions and scale, and the single transparent wireframe study at far left.
+
+HIGHEST PRIORITY: NO FLOATING BODY PARTS. The first three solid figures currently have exploded-view gaps. Convert ALL SIX solid figures into fully assembled, connected characters. Fill the empty spaces with real solid anatomy, without moving the endpoints or shortening the body. Specifically connect each head to its shoulders with a skin-colored neck; hair must physically sit on the head; connect the exposed stomach down into the waistband/pelvis with a continuous torso; join sleeves to arms through continuous elbows/forearms/wrists; hands attach to wrists; trouser hems and shoes connect through solid ankles. In the leftmost lavender-haired figure the gap directly under the head and the huge missing lower abdomen are key defects: fill them, never simply move the pieces together. Repair the same gaps in the other two standing figures. Remove dashed exploded-view connector lines. No solid figure is an exploded diagram anymore. Only the translucent wireframe figure stays as it is.
+
+SECOND CRITICAL INVARIANT: lock the ORIGINAL BODY PROPORTIONS of every figure. Preserve each figure's precise head size and position, small narrow cuboid face, tall slim torso, shoulder width, pelvis height, long slender upper/lower arms, long slender thighs/calves, original elbow/knee positions, and original hand/foot scale. Keep exact original crown-to-ground heights, body scale at depth, poses, and grounding. Fill gaps with anatomy while keeping head and foot positions fixed. Do not enlarge heads, shorten legs, widen waists/hips/shoulders, exaggerate feminine curves, make stocky dolls, round the geometry, or normalize their stylized anatomy. Gender presentation comes from fashion and hair, not altered proportions.
+
+Give EACH OF THE SIX solid characters a clearly distinct contemporary fashionable outfit, with substantial differences in BOTH TOPS AND BOTTOMS, not recolored copies. Left to right:
+A. First solid figure, lavender bob, previously circled: an ivory sleeveless mock-neck knit, a short muted-burgundy A-line skirt, charcoal tights following the existing long slender legs, and lavender ankle boots. Keep the same small head and slim elongated body. Fully continuous neck, arms, waist and ankles.
+B. Next figure with short black curls: a sage open cardigan over a charcoal crew-neck tee, narrow dark-indigo denim jeans with subtle seams (NO cargo pockets or straps), and black Chelsea boots. Continuous neck and skin where exposed.
+C. Third standing figure with swept brown hair: a dusty-rose short-sleeve button shirt tucked into tailored charcoal Bermuda shorts. Show the ORIGINAL extremely long thin lower legs as continuous skin-colored geometry from the hems down to ivory high-top sneakers. Do not thicken or shorten those legs.
+D. Large foreground lavender-bob hero: fitted black sleeveless tailored vest over a lavender ribbed top, clean high-waisted long charcoal tailored trousers with NO cargo pockets or leg straps, lavender/black high-top sneakers. Retain the same original pose and exact proportions. Visible arms, elbows, wrists and ankles are solid and attached.
+E. Smaller rear figure on first pedestal: a relaxed ivory crew-neck sweatshirt with dark collar/cuff details, muted sage slim cargo trousers with restrained pockets, black low-top sneakers. Preserve the same thin long-limbed skeleton and tiny cuboid head.
+F. Far-right rear figure: a dusty-rose longer tailored blazer, pale top, slim black leggings and angular ivory ankle boots. Long blazer adds a distinct garment length while body proportions remain unchanged.
+
+Keep current varied masculine/feminine/androgynous presentation and skin tones. Maintain a restrained palette of charcoal, lavender, sage, ivory and burgundy/rose. All garments should look deliberately styled and distinct. No identical pants shared across the cast. No additional characters, floating garments, duplicate accessories, text, logos, watermarks, circles or annotations. Preserve blank angular faces. The result must read as six fashionable complete people with different wardrobes, beside a wireframe development study.
+
+## Final proportion correction prompt
+
+Make a very targeted proportion-and-geometry correction to IMAGE 1, the completed six-outfit Project Ocean artwork. IMAGE 1 is the EDIT TARGET and its successful outfits, hairstyles, continuous anatomy, lighting, scene, poses, composition and colors must stay. IMAGE 2 is ONLY a measurement reference for original body proportions; DO NOT restore its floating body parts, repeated clothes, gaps, or exploded-view display.
+
+CRITICAL CORRECTION: The first three solid figures in IMAGE 1 have waistlines/hip anchors raised relative to IMAGE 2, shortening their torsos. Restore the original shoulder-to-pelvis lengths from IMAGE 2 while keeping the exact same head positions, head sizes, original shoulder positions, original overall heights, foot positions and narrow body widths. The first solid lavender-haired skirt figure's lower waist/hip/belt anchor should be approximately y=360–365 in this 2048×768 frame, instead of the current raised waistline near y=295. Extend the fitted ivory knit down to that original waist anchor, then position the same short burgundy skirt around the restored pelvis. The middle cardigan figure's hip/belt anchor should follow IMAGE 2 near y=390; extend the torso/cardigan to match. The third standing shorts figure's belt/hip anchor should follow IMAGE 2 near y=380–385 instead of the current y=340; lengthen the same rose button shirt down to it and place the same tailored shorts on that original pelvis. Keep each original thigh/calf joint location and overall body height, using IMAGE 2 to align skeleton landmarks. No body parts float: fill neck, torso, arms, wrists and ankles with continuous solid anatomy.
+
+Keep the remaining three figures' successful proportions and outfits exactly as in IMAGE 1; do not redesign them. All six remain fashionable with different tops and bottoms: ivory knit/burgundy skirt, sage cardigan/indigo jeans, rose short-sleeve shirt/charcoal shorts, black vest/lavender tank/plain long trousers, ivory sweatshirt/sage cargo trousers, rose long blazer/black leggings.
+
+Restore the original blocklike angular treatment of exposed arms and shoulders on the first and foreground women: narrow straight-sided rigid polygon segments and sharp planar elbows, not rounded organic muscles or soft cylindrical shoulders. Maintain their original thinness and length. Make these angular changes without introducing gaps or detached joints.
+
+Everything else must remain unchanged: six solid fully assembled people plus one transparent wireframe study, small blank cuboid faces, long slim body proportions, existing poses and placements, charcoal background, left negative space, 8:3 2048×768 canvas, floor and pedestals. No new text, annotations, logos or added props. Avoid broad regeneration; preserve Image 1's successful wardrobe diversity and repaired skin continuity.
+

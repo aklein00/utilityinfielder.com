@@ -32,9 +32,9 @@ export const deckSlides: DeckSlide[] = [
     id: "project-ocean",
     name: "Project Ocean",
     label: "In development",
-    image: "/assets/images/carousel/project-ocean.jpg",
+    image: "/assets/images/carousel/project-ocean-v6.webp",
     imageAlt:
-      "A manta ray gliding through sunlit water beneath a sailboat",
-    mobileCrop: "right",
+      "Six slender characters in distinct fashionable outfits beside a wireframe character study",
+    mobileCrop: "center",
   },
 ];

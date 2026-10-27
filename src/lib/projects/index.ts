@@ -118,6 +118,17 @@ export const projects: Project[] = [
     image: "/assets/images/projects/imagefarm.jpg",
   },
   {
+    id: "project-ocean",
+    name: "Project Ocean",
+    description:
+      "A modular 3D character studio. Shape a character in Current, then build its wardrobe in River.",
+    status: "wip",
+    href: null,
+    isExternal: true,
+    tags: ["tool", "3D", "characters"],
+    image: "/assets/images/carousel/project-ocean-v6.webp",
+  },
+  {
     id: "datelight",
     name: "DateLight",
     description:
