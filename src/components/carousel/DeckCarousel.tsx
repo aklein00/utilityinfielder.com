@@ -128,6 +128,7 @@ export default function DeckCarousel({
                   priority={slideIndex === 0}
                   sizes="(max-width: 1920px) 100vw, 1920px"
                   className={`${styles.image} ${mobileCropClass}`}
+                  style={{ objectPosition: slide.imagePosition }}
                 />
               </article>
             );

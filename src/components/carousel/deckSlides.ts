@@ -4,11 +4,23 @@ export interface DeckSlide {
   label: string;
   image: string;
   imageAlt: string;
+  imagePosition?: string;
   href?: string;
   mobileCrop?: "center" | "right";
 }
 
 export const deckSlides: DeckSlide[] = [
+  {
+    id: "vr-high-school",
+    name: "VR High School",
+    label: "Game pitch",
+    image: "/assets/images/projects/vr-high-school.webp",
+    imagePosition: "center 20%",
+    imageAlt:
+      "The Goblin Bard leads a music lesson with a halfling playing flute and a dwarf playing a hand drum",
+    href: "https://vrhs.utilityinfielder.com",
+    mobileCrop: "center",
+  },
   {
     id: "last-arcade",
     name: "Last Arcade",

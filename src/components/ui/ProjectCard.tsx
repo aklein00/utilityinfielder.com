@@ -58,6 +58,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               alt={project.name}
               fill
               className="object-cover"
+              style={{ objectPosition: project.imagePosition }}
               sizes="(max-width: 768px) 100vw, 33vw"
             />
           ) : (

@@ -17,6 +17,8 @@ export interface Project {
   tags: string[];
   /** Path to thumbnail image in /public, e.g. "/assets/images/projects/foo.png". null = show placeholder */
   image?: string | null;
+  /** Optional focal point for cropped thumbnail artwork. */
+  imagePosition?: string;
   /** true = show a "Beta" badge alongside the Live badge (live but unfinished) */
   isBeta?: boolean;
   /** true = show an "Alpha" badge alongside the status badge (early preview) */
@@ -48,6 +50,18 @@ export const projects: Project[] = [
     isAlpha: true,
     tags: ["tool", "3D", "characters"],
     image: "/assets/images/carousel/project-ocean-v6.webp",
+  },
+  {
+    id: "vr-high-school",
+    name: "VR High School",
+    description:
+      "A fantasy school game pitch where monster teachers guide students through puzzles, experiments, and creative projects.",
+    status: "live",
+    href: "https://vrhs.utilityinfielder.com",
+    isExternal: true,
+    tags: ["game pitch", "fantasy", "art"],
+    image: "/assets/images/projects/vr-high-school-card.png",
+    imagePosition: "center 35%",
   },
   {
     id: "gateaux",

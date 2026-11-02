@@ -230,6 +230,10 @@ Recommendation: **itch.io for games that are shareable, Vercel directly for prot
 
 ## Change Log
 
+### VR High School homepage feature — 2 November 2026
+
+Added VR High School as a game pitch linking to `https://vrhs.utilityinfielder.com`. The project card uses Art's supplied title artwork; the opening carousel slide uses the pitch-page hero artwork. Both images are stored locally. The Live grid now starts with Project Ocean and VR High School, followed by Gateaux and Ultraviolet in the second row. Verify with `npm run build` and check the homepage card order, carousel image, and pitch links in the local preview.
+
 ### Project Ocean launch preparation — 26 October 2026
 
 Prepared the public Ocean launch configuration and a character-studio marketing image for the homepage carousel. Added a WIP project card; public links stay disabled until the custom domain is verified. See [the launch plan](docs/project-ocean/LAUNCH_PLAN.md) for the Vercel settings, Cloudflare DNS record, verification checklist, and link activation steps. This preparation does not publish either repository.
